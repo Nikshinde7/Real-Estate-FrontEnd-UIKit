@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>DreamHouse</title>
+
+	<!-- Links of css and js files -->
+   <!-- 1.UIKIT Files -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/css/uikit.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit-icons.min.js"></script>
+   
+   <!-- 2.W3-css Files -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+<!-- <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css"> -->
+
+
+  <!--  3. Angular js files -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+   <!--   4.Font awesome icon  -->
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+<script type="text/javascript" src="index.js"></script>
+
+
+   <!-- Bootstrap files -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+<style>
+  .w3-g{background: linear-gradient(to right, #11998e, #38ef7d);padding-top:4%;}
+  .w3-gs{background: linear-gradient(to left, #11998e, #38ef7d);}
+  .pad4{padding-top:4%;}
+	.fontgoogle{font-family: 'Sacramento', cursive;font-size:45px;padding-top:10px;}
+	.fontstyle{font-size:17px !important;word-spacing:2px;letter-spacing:1.2px;}
+	.Bg{background-image:url("images/Beach.jpg");background-position:center;background-size:cover;}
+	.pad{padding:280px 100px;}
+	.uk-search-input{width:400px !important;height:50px !important;border-color:green !important;border-radius:200px !important;}
+	.pads{padding:50px 150px;}
+	.umine{margin-bottom:0px !important;}
+	.want{font-family: 'Dosis', sans-serif;font-size:45px !important;letter-spacing:6px;}
+	/*.w3-teal{background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6) !important;}
+	*/.want2{padding:2% 20%;font-family: 'Dosis', sans-serif;font-size:40px;word-spacing:4px;letter-spacing:7px;}
+	.card-group{  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4) !important;}
+	.w3-card{background-color: transparent !important;}
+	.footerpad1{padding:60px 20px;}
+  .footerpad{padding:60px 40px;}
+  .footerfont{font-family: 'Baloo Chettan 2', cursive;letter-spacing:2px;font-size:12px !important;}
+  .footerpads{padding-right:20px;padding-left:20px;}
+  .marg{margin-left:20% !important;}
+  .marg2{margin-left:30% !important;}
+  .uspfont{font-family: 'Baloo Chettan 2', cursive;letter-spacing:2px;font-size:42px !important;}
+  .uspSection{font-family: 'Dosis', sans-serif;font-size:19px;letter-spacing:1px}
+  .bgUsp{background-image:url("images/n.jpg");background-position:20% -7%;background-size: cover;margin-top:-3%;margin-bottom:-3%;}
+  .padd{padding-top:40px !important;}
+  .paadd2{padding-bottom:30px !important;}
+/*Prajakta CSS*/
+
+.textEffect {
+    border: 2px solid #fff;
+    width: 90%;
+    margin: 25% !important;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 0px;
+    padding: 15px;
+    transition: 1s all;
+    font-style: normal;
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+   font-weight: 500;
+    text-transform: uppercase;
+
+  }
+ 
+
+
+
+
+.agile-title{
+  text-align:center;
+}
+.agile-title h3 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #000;
+    margin-bottom: 2em;
+    border: 2px dashed #000;
+    display: inline-block;
+    padding: .4em 1em .2em;
+}
+.headings{padding:2% !important;font-family: 'Dosis', sans-serif;letter-spacing:4px !important;word-spacing:2px;}
+.ukc{border:1px solid linen !important;}
+}
+ 
+
+</style>
+<!-- whatsapp code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <a href="https://api.whatsapp.com/send?phone=yourwhatsappnumberwithcountrycode&text=hello"></a>
+
+</head><!-- 
+<script>
+	var app=angular.module("myApp",[]);
+	app.controller("RealController",function($scope){
+		alert("Hiii");
+
+
+	})
+</script> -->
+<body>
+     <div ng-app="myApp" ng-controller="RealController">
+     
+       <nav class="uk-navbar-container umine uk-margin" uk-navbar>
+          
+          <div class="uk-navbar-left uk-margin-medium-left">
+              <span uk-icon="icon: home; ratio: 2"></span>
+              <a class="uk-navbar-item uk-logo uk-margin-left fontgoogle" href="#">Dream House</a>
+              
+          </div>
+
+          <div class="uk-navbar-right"> 
+              <div class=" uk-navbar-item uk-margin-right fontstyle" uk-toggle="target: #modal-close-default">
+                 <div class="uk-button-text">Post Your Property</div>
+              </div>     
+   
+              <div class="uk-navbar-item fontstyle uk-margin-right uk-margin-left">
+                 <div class="uk-button-text"><a href="#contact" style="color:inherit !important;text-decoration:none !important ">Contact us</a></div>
+              </div>
+              
+              <div class="uk-navbar-item fontstyle uk-margin-right uk-margin-left">Chat With Us&nbsp&nbsp
+               <!--  <a href="" class="uk-icon-button" uk-icon="icon: whatsapp; ratio: 2"></a> -->
+
+
+
+                <a target="_blank"  href="https://wa.me/918788178548" class="uk-icon-button" uk-icon="icon: whatsapp; ratio: 2" >
+<i class="fa fa-fw fa-whatsapp" style="color:#fff"></i>
+<!-- <span style="color:#fff">
+Contact Us On WhatsApp </span> -->
+</a>
+<!-- <a target="_blank" title="Contact Us On WhatsApp" href="https://api.whatsapp.com/send?phone=+919112398592&text=Hi,%20I%20would%20like%20to%20get%20more%20information.." class="uk-icon-button whatsapplink hideweb" uk-icon="icon: whatsapp; ratio: 2" >
+<i class="fa fa-fw fa-whatsapp" style="color:#fff"></i> -->
+<!-- <span style="color:#fff">
+Contact Us On WhatsApp </span> -->
+<!-- </a> -->
+  
+              </div>   
+
+          </div>
+       </nav> <!-- Navigation bar ended -->
+
+
+   <div id="modal-close-default" uk-modal>
+       <div class="uk-modal-dialog uk-modal-body w3-green">
+           <button class="uk-modal-close-default w3-red  uk-padding-medium w3-circle" type="button" uk-close></button>
+           <h2 class="uk-modal-title"><p class="want2 w3-center">Add It Here !!</p></h2>
+            <div class="uk-margin-medium-top w3-center">
+            <h4 class="uk-heading">Your Name</h4>
+               <input class="uk-input" type="text" placeholder="" style="height:50px !important;width:300px !important;border-radius:2000px !important">
+         </div>
+
+         <div class="uk-margin w3-center">
+          <h4 class="uk-heading ">Your Mobile No.</h4>
+               <input class="uk-input" type="text" placeholder="" style="height:50px !important;width:300px !important;border-radius:2000px !important;">
+         </div>
+
+        <div class="uk-margin uk-margin-medium-top uk-align-center uk-margin-xlarge-left">
+          <button class="uk-button uk-button uk-button-primary" ng-click="submitMail()" style="background-color:transparent !important;border-color: white !important;border-radius:200px !important;width:200px !important;border-width:2px !important;font-size:15px !important;margin-left:9% !important;margin-bottom:12% !important;height:50px !important">Submit</button>
+         </div>
+       </div>
+   </div>
+
+
+       <div class="Bg pad">
+          <div class="uk-margin">
+             <div class="">
+              <h3 class="fontstyle" style="font-size:28px !important">Enter Your Budget</h3>
+             <input class="uk-input uk-margin uk-margin-small-right" type="text" ng-model="homeObj.fromBudget" placeholder="From Thousand" style="width:auto !important;">
+             <input class="uk-input" type="text" placeholder="To Thousand" ng-model="homeObj.toBudget"style="width:auto !important;"><br>
+             <button class="uk-button uk-button-danger" uk-toggle="target: #modal-example" ng-click="getAllPropertiesByBudget()">Search Properties</button>
+             </div>
+          </div>
+       </div>
+
+
+
+
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title w3-center uk-margin-medium-bottom">Your Properties</h2>
+
+        
+<div uk-filter="target: .js-filter">
+
+        <!-- <li ng-model="Sell"><a href="#">Sell</a></li>
+        <li ng-model="Buy"><a href="#">Buy</a></li>
+        <li ng-model="Rent"><a href="#">Rent</a></li> -->
+        <button class="uk-button uk-button-primary uk-margin-right uk-margin-left" ng-click="hide()">All</button>
+        <button class="uk-button w3-red uk-margin-right uk-margin-left" ng-click="hide1()">Sell</button>
+        <button class="uk-button w3-teal uk-margin-right uk-margin-left" ng-click="hide2()">Buy</button>
+        <button class="uk-button w3-black uk-margin-right uk-margin-left" ng-click="hide3()">Rent</button>
+    
+
+    <ul ng-repeat="name in list2" class="js-filter uk-margin-medium-top uk-child-width-1-3 uk-child-width-1-1@m uk-text-center" uk-grid>
+        <li ng-show="{{name.PropertyType}}">
+            <div class="uk-card uk-card-default w3-green uk-card-body">{{name.PropertyName}}</div>
+        </li>
+    </ul>
+</div> 
+
+
+
+
+    </div>
+</div>
+
+              <div class="agile-title w3-g">
+                 <h3 class="headings">OUR PRIME PROPERTIES</h3>
+              </div>
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 pad4 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="images/img1.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="">
+            <div class="uk-position-center uk-panel" style="display: block;"><h1 class="textEffect zoom">Pre-leased Commercial</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="images/img2.jpg" alt="" class="uk-transition-scale-up uk-transition-opaque" style="height: 100%;">
+            <div class="uk-position-center uk-panel "><h1 class="textEffect zoom">SEZ & IT parks</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="images/img22.jpg" alt="" class="uk-transition-scale-up uk-transition-opaque" style="height: 100%;">
+            <div class="uk-position-center uk-panel "><h1 class="textEffect zoom">Co-Working Spaces</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="images/img55.jpg" alt="" class="uk-transition-scale-up uk-transition-opaque" style="height: 100%;">
+            <div class="uk-position-center uk-panel "><h1 class="textEffect zoom">Buy/Rent Luxury</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="images/img44.jpg" alt="" class="uk-transition-scale-up uk-transition-opaque" style="height: 100%;">
+            <div class="uk-position-center uk-panel "><h1 class="textEffect zoom">Premium Bungalows</h1></div>
+        </li>
+       
+      
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+
+
+
+
+
+
+
+       
+
+
+           <div class="agile-title uk-padding-medium-top w3-g">
+              <h3 class="headings">Featured Projects</h3>
+           </div>
+
+
+
+
+
+
+<div uk-slider="center: true" class="pad4">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid">
+            <li>
+                <div class="uk-card uk-card-default" style="border:2px solid #1eb688 !important;">
+                     <div class="uk-panel">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img  class="uk-transition-scale-up uk-transition-opaque" src="images/imagefirsts.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+            </div>
+                    <div class="uk-card-body">
+                        
+
+                         <h3 class="uk-card-title">
+                            <span uk-icon="menu"></span>&nbsp;&nbspPre-leased &nbsp&nbsp&nbsp&nbspCommercial
+                         </h3>
+                       </div>
+                
+              </div>
+            </li>
+            <li>
+               <div class="uk-card uk-card-default" style="border:2px solid #1eb688 !important;">
+                    
+
+
+                     <div class="uk-panel">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img  class="uk-transition-scale-up uk-transition-opaque" src="images/imageSecond.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+            </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"> <span uk-icon="menu"></span>&nbsp;&nbspHospital &nbsp&nbsp&nbsp&nbspFaculties</h3>
+                       </div>
+                
+              </div>
+            </li>
+            <li>
+               <div class="uk-card uk-card-default" style="border:2px solid #1eb688 !important;">
+                    
+
+
+                     <div class="uk-panel">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img  class="uk-transition-scale-up uk-transition-opaque" src="images/imageThird.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+            </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"><span uk-icon="menu"></span>&nbsp;&nbspPre-Leased &nbsp&nbsp&nbsp&nbspResidential</h3>
+                       </div>
+                
+              </div>
+            </li>
+            <li>
+               <div class="uk-card uk-card-default" style="border:2px solid #1eb688 !important;">
+                    
+
+
+                     <div class="uk-panel">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img  class="uk-transition-scale-up uk-transition-opaque" src="images/imageFourth.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+            </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"><span uk-icon="menu"></span>&nbsp;&nbspPre-Leased &nbsp&nbsp&nbsp&nbspRetail</h3>
+                       </div>
+                
+              </div>
+            </li>
+            <li>
+             <div class="uk-card uk-card-default" style="border:2px solid #1eb688 !important;">
+                    
+
+
+                     <div class="uk-panel">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img  class="uk-transition-scale-up uk-transition-opaque" src="images/imageFifth.jpg" alt="">
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+            </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"><span uk-icon="menu"></span>&nbsp;&nbspPre-leased &nbsp&nbsp&nbsp&nbspTowers</h3>
+                       </div>
+                
+              </div>
+            </li>
+
+          
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+  <br><br>
+
+</div>
+
+
+
+
+      <div class="bgUsp paadd2"> 
+           <h1 class="uk-margin-medium-top padd uspfont w3-center">Our Unique Selling Proposition</h1>
+           <div class="uk-text-center marg uk-margin-medium-top" uk-grid>
+             <div class="uk-width-1-4@m">
+               <div class="uk-card w3-green uk-card-default uk-card-body uk-card-hover">
+                   
+                     <div class="uk-align-center">
+                       <p class="uspSection">100% verified property details</p>
+                     </div>
+
+                     <div class="uk-align-center">
+                       <img src="images/100.png" width="100px">
+                     </div>
+               </div>
+             </div>
+           <div class="uk-width-1-4@m">
+               <div class="uk-card w3-green uk-card-default uk-card-body uk-card-hover">
+                 
+                     <div class="uk-align-center">
+                       <p class="uspSection">No brokerage and Service fee</p>
+                     </div>
+
+                     <div class="uk-align-center">
+                       <img src="images/no-money.png" width="100px">
+                     </div>
+               </div>
+           </div>
+           <div class="uk-width-1-4@m">
+               <div class="uk-card w3-green uk-card-hover uk-card-default uk-card-body">
+                 
+                     <div class="uk-align-center">
+                       <p class="uspSection">Free Maintenance of Property</p>
+                     </div>
+
+                     <div class="uk-align-center">
+                       <img src="images/maintenance.png" width="100px">
+                     </div>
+               </div>
+           </div>
+          </div>
+
+          <div class="uk-text-center marg2 uk-margin-medium-bottom" uk-grid>
+             <div class="uk-width-1-4@m">
+               <div class="uk-card uk-card-hover w3-green uk-card-default uk-card-body" style="width:228.6px !important">
+                 
+                     <div class="uk-align-center">
+                       <p class="uspSection">Personal assistance for every visit</p>
+                     </div>
+
+                     <div class="uk-align-center">
+                       <img src="images/help.png" width="100px">
+                     </div>
+               </div>
+             </div>
+           <div class="uk-margin-medium-left uk-width-1-4@m">
+               <div style="width:228.6px !important" class="uk-card uk-card-hover uk-card-default uk-card-body w3-green">
+                 
+                     <div class="uk-align-center">
+                       <p class="uspSection">In-house legal team for the paper work</p>
+                     </div>
+
+                     <div class="uk-align-center">
+                       <img src="images/insurance.png" width="100px">
+                     </div>
+               </div>
+           </div>
+          </div>
+      </div> <!-- USP Division Ended -->
+
+
+
+       <div class="card-group col-md-12">
+         <div class="w3-card w3-teal col-md-6">
+            <div class="fontstyle want pads">
+               <p>Not <br>Seeing<br> Your<br> Dream<br> Property ?</p>
+            </div>
+
+         </div>
+         <div class="w3-card w3-red col-md-6" style="box-shadow:none !important">
+          <p class="want2">Let Us <br>Know !!</p>
+         <div class="uk-margin uk-margin-xlarge-left">
+          <h4 class="uk-heading">Your Name</h4>
+               <input class="uk-input" type="text" placeholder="" style="height:50px !important;width:300px !important;border-radius:2000px !important">
+         </div>
+
+         <div class="uk-margin uk-margin-xlarge-left">
+          <h4 class="uk-heading">Your Mobile No.</h4>
+               <input class="uk-input" type="text" placeholder="" style="height:50px !important;width:300px !important;border-radius:2000px !important;">
+         </div>
+
+         <div class="uk-margin uk-margin-xlarge-left">
+          <h4 class="uk-heading">Your Specifications</h4>
+               <input class="uk-input" type="text" placeholder="" style="height:50px !important;width:300px !important;border-radius:2000px !important;">
+         </div>
+         <div class="uk-margin uk-margin-medium-top uk-align-center uk-margin-xlarge-left">
+          <button class="uk-button uk-button uk-button-primary" ng-click="" style="background-color:transparent !important;border-color: white !important;border-radius:200px !important;width:200px !important;border-width:2px !important;font-size:15px !important;margin-left:9% !important;margin-bottom:12% !important;height:50px !important">Submit</button>
+         </div>
+         </div>
+       </div> <!-- Card-group for mail division ended -->
+
+
+
+
+
+
+      <div class="w3-gs">
+        <div class="r">
+           <div class="row col-md-12">
+              <div class=" col-md-4 footerpad1 footerfont">
+                  
+
+                  <h4 class="w3-center uk-margin-medium-bottom">Real Estate in Pune</h4>
+                  <div class="row col-md-12">
+                     <div class="col-md-4">
+                        <h5 class="w3-center">East</h5>
+                         <ul class="uk-margin uk-list uk-list-bullet">
+                           <li>Magarpatta</li>
+                           <li>Amanora</li>
+                           <li>Hadapsar</li>
+                           <li>Kharadi</li>
+                           <li>Viman nagar</li>
+                           <li>Mundhwa</li>
+                         </ul>                     
+                     </div>
+                     <div class="col-md-4">
+                        <h5 class="w3-center">West</h5>
+                          <ul class="uk-margin uk-list uk-list-bullet">
+                          <li>Wakad</li>
+                          <li>Baner</li>
+                          <li>Aundh</li>
+                          <li>Pashan</li>
+                          <li>Hinjewadi</li>
+
+                          </ul>                     
+                     </div>
+                     <div class="col-md-4">
+                     <h5 class="w3-center">Center</h5>
+                     <ul class="uk-margin uk-list uk-list-bullet">
+                       <li>Camp</li>
+                       <li>Bhosale road</li>
+                       <li>FC Road</li>
+                       <li>SB Road</li>
+                     </ul>
+                   </div>
+                  </div>
+
+                  <div class="row col-md-12">
+                    
+                  </div>
+
+<!--                   <h5 class="w3-center">East</h5>
+                  <ul class="uk-margin uk-list uk-list-bullet">
+                     <li>Magarpatta</li>
+                     <li>Amanora</li>
+                     <li>Hadapsar</li>
+                     <li>Kharadi</li>
+                     <li>Viman nagar</li>
+                     <li>Mundhwa</li>
+                  </ul>
+                  <h5 class="w3-center">West</h5>
+                  <ul class="uk-margin uk-list uk-list-bullet">
+                     <li>Wakad</li>
+                     <li>Baner</li>
+                     <li>Aundh</li>
+                     <li>Pashan</li>
+                     <li>Hinjewadi</li>
+
+                  </ul>
+                  <h5 class="w3-center">Center</h5>
+                  <ul class="uk-margin uk-list uk-list-bullet">
+                     <li>Camp</li>
+                     <li>Bhosale road</li>
+                     <li>FC Road</li>
+                     <li>SB Road</li>
+                  </ul>
+ -->              </div>
+              <div class="col-md-4 w3-card footerpad footerfont" id="contact">
+                   <h4 class="w3-center"> Contact Us </h4>
+
+                   <dl class="uk-margin uk-description-list">
+                         <dt> <span uk-icon="location" style="padding-right:10px !important"></span> Office address</dt>
+                         <dd class="uk-margin-small-top">Katraj bus depot, near jaikranti college, Lane no.7, Pune 411046</dd> 
+                    </dl>
+
+                    <dl class="uk-description-list uk-margin">
+                         <dt> <span uk-icon="receiver" style="padding-right:10px !important"></span> Office Phone no.</dt>
+                         <dd class="uk-margin-small-top">8788178548</dd> 
+                    </dl>
+
+
+                    <dl class="uk-description-list uk-margin">
+                         <dt> <span uk-icon="mail" style="padding-right:10px !important"></span> Office Mail Address.</dt>
+                         <dd class="uk-margin-small-top">office@gmail.com</dd> 
+                    </dl>
+              </div>
+
+              <div class="col-md-4  footerpad footerfont">
+                    <h4 class="w3-center"> See Us On Social Media</h4>                  
+                    <div class="uk-padding">
+                    	<span class="footerpads" uk-icon="icon: whatsapp; ratio: 2"></span>
+                        <span class="footerpads" uk-icon="icon: facebook; ratio: 2"></span>
+                        <span class="footerpads" uk-icon="icon:  behance; ratio: 2"></span>
+                    </div>
+                    <div class="uk-padding">
+                        <span class="footerpads" uk-icon="icon: google; ratio: 2"></span>
+                        <span class="footerpads" uk-icon="icon: youtube; ratio: 2"></span>
+                        <span class="footerpads" uk-icon="icon: github; ratio: 2"></span> 
+                    </div>                       
+              </div>
+           </div>
+        </div> 
+      </div> <!-- footer division ended -->
+
+
+
+     </div>  <!-- Controller division ended -->
+</body>
+</html> 
